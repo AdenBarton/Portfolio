@@ -1,0 +1,77 @@
+/* Dark Theme */
+body {
+  background-color: #121212;
+  /* color: #e0e0e0; */
+  font-family: Arial, sans-serif;
+}
+
+/* Filters section */
+.filters {
+  margin-bottom: 20px;
+}
+
+#name-search {
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  border: 1px solid #444;
+  border-radius: 5px;
+  background-color: #222;
+  color: #e0e0e0;
+}
+
+#name-search::placeholder {
+  color: #888;
+  opacity: 1;
+}
+
+.tags-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tag {
+  background-color: #6a0dad; /* Purple */
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.tag:hover {
+  background-color: #4b0082; /* Darker Purple */
+}
+
+/* Projects list */
+.projects-list {
+  margin-top: 20px;
+}
+
+.project {
+  background-color: #1e1e1e;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+}
+
+.project h2 {
+  margin-top: 0;
+  color: #a970ff;
+}
+
+.project p {
+  margin-bottom: 10px;
+  line-height: 1.5;
+  color: #c0c0c0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .tags-list {
+      flex-direction: column;
+  }
+}
